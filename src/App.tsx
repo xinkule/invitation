@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import Content from './components/Content';
+import { COMPANY_NAME } from './common/constants';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="fixed-pager top-0 border-0 border-b pl-10">
+        <h2 className="text-base md:text-xl m-0">
+          {COMPANY_NAME.toUpperCase()}
+        </h2>
       </header>
-    </div>
+      <main className="py-20 overflow-auto h-full">
+        <Content />
+      </main>
+      <footer className="fixed-pager bottom-0 border-0 border-t flex-col justify-center text-xs md:text-sm">
+        <div>Made with ❤ by Albert.</div>
+        <div>© 2021 {COMPANY_NAME} All rights reserved.</div>
+      </footer>
+    </>
   );
 }
 
