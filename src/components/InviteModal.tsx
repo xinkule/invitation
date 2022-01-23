@@ -29,10 +29,9 @@ const InviteModal: React.FC<Props> = ({ visible, onCancel }) => {
       {successful ? (
         <>
           <Header title="All Done!" />
-          <div className="text-sm md:text-base text-center my-10">
-            You will be one of the first to experience
-            <br />
-            {COMPANY_NAME} when we launch.
+          <div className="text-sm md:text-base text-center my-10 break-all">
+            You will be one of the first to experience {COMPANY_NAME} when we
+            launch.
           </div>
           <div>
             <Button type="primary" block onClick={onClose}>
