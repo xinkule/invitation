@@ -23,7 +23,7 @@ const Content: React.FC<Props> = () => {
           Request an invite
         </Button>
       </div>
-      <Modal visible={visible} onCancel={() => setVisible(false)}></Modal>
+      <Modal visible={visible} onCancel={() => setVisible(false)} />
     </section>
   );
 };

@@ -43,11 +43,7 @@ const InviteModal: React.FC<Props> = ({ visible, onCancel }) => {
       ) : (
         <>
           <Header title="Request an invite" />
-          <Form
-            onSuccess={() => {
-              setSuccessful(true);
-            }}
-          />
+          <Form onSuccess={() => setSuccessful(true)} />
         </>
       )}
     </Modal>
