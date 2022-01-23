@@ -1,18 +1,44 @@
 # Invitation
 
-## High lights
+## Highlights
 
 1. Tailwind CSS to handle style
-2. Git hooks prettier
-3. Automated changelog
-4. Optimized build with CRA
+2. Full functional tests.
+3. Git hooks prettier
+4. Automated changelog
+5. Optimized build with CRA
+
+## Instruction
+
+```ts
+// install dependencies
+yarn install
+
+// create a build
+yarn build
+
+// start a static server
+yarn serve
+```
 
 ## Available Scripts
 
 ### `yarn start`
 
+Start the development server.
+
 ### `yarn test`
+
+Run integrated tests.
 
 ### `yarn build`
 
 Build the app in the build folfer
+
+### `yarn release`
+
+Pack a release.
+
+### `yarn serve`
+
+Start a static server.
