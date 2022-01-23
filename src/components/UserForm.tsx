@@ -55,7 +55,6 @@ const UserForm: React.FC<Props> = ({ onSuccess }) => {
             errorMessage: string;
           }>;
           setError(response ? response.data.errorMessage : message);
-        } finally {
           setLoading(false);
         }
       }}
