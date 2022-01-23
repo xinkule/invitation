@@ -1,0 +1,19 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index 2b1b3bb..5b7c333 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -451,6 +451,14 @@ module.exports = function (webpackEnv) {
+                   isEnvDevelopment &&
+                     shouldUseReactRefresh &&
+                     require.resolve('react-refresh/babel'),
++                    [
++                      require.resolve('babel-plugin-import'),
++                      {
++                        libraryName: 'antd',
++                        libraryDirectory: 'lib',
++                        style: 'css',
++                      },
++                    ],
+                 ].filter(Boolean),
+                 // This is a feature of `babel-loader` for webpack (not Babel itself).
+                 // It enables caching results in ./node_modules/.cache/babel-loader/
