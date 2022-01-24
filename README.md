@@ -3,10 +3,14 @@
 ## Highlights
 
 1. Tailwind CSS to handle style
-2. Full functional tests.
+2. Full functional tests
 3. Git hooks prettier
 4. Automated changelog
 5. Optimized build with CRA
+
+## Environment
+
+- Node.js 14+
 
 ## Instruction
 

@@ -2,6 +2,9 @@
   "name": "invitation",
   "version": "0.1.1",
   "private": true,
+  "engines": {
+    "node": ">=14"
+  },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@types/jest": "^27.0.1",
